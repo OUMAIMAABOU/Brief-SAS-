@@ -1,0 +1,34 @@
+
+
+  SH193OUMAIMAABOUELHAITAM0.0000CIN de client est: E132
+ le nm de client :hind
+Prénom de client :AMAL
+montant est :0.0000
+ CIN de client est: 123D
+ le Nom de client :AHMAD
+Prénom de client :ALAOUI
+montant est :0.0000
+ CIN de client est: AA2
+ le Nom de client :KAMAL
+Prénom de client :RAM
+montant est :0.0000 DH
+ CIN de client est: qq1
+ le Nom de client :AHMAD
+Prénom de client :AG
+montant est :4444 DH
+ CIN de client est: SH193097
+ le Nom de client :ABOUELHAITAM
+Prénom de client :OUMAIMA
+montant est :150.49 DH
+ CIN de client est: sh192992
+ le Nom de client :BAHASSAN
+Prénom de client :DOUNIA
+montant est :3000 DH
+ ========================
+ ========================
+
+ CIN de client est: SHUEURU333
+ le Nom de client :AHAMAD
+Prénom de client :ALI
+montant est :555 DH
+ ========================
