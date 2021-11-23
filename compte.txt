@@ -1,0 +1,99 @@
+
+
+  SH193OUMAIMAABOUELHAITAM0.0000CIN de client est: E132
+ le nm de client :hind
+Prénom de client :AMAL
+montant est :4.0000
+ CIN de client est: 123D
+ le Nom de client :AHMAD
+Prénom de client :ALAOUI
+montant est :3.0000
+ CIN de client est: AA2
+ le Nom de client :KAMAL
+Prénom de client :RAM
+montant est :2.0000 DH
+ CIN de client est: qq1
+ le Nom de client :AHMAD
+Prénom de client :AG
+montant est :4444 DH
+ CIN de client est: SH193097
+ le Nom de client :ABOUELHAITAM
+Prénom de client :OUMAIMA
+montant est :150.49 DH
+ CIN de client est: sh192992
+ le Nom de client :BAHASSAN
+Prénom de client :DOUNIA
+montant est :3000 DH
+ ========================
+ ========================
+
+ CIN de client est: SHUEURU333
+ le Nom de client :AHAMAD
+Prénom de client :ALI
+montant est :555 DH
+ ========================
+ ========================
+
+ CIN de client est: SH57573
+ le Nom de client :ALI
+Prénom de client :MAEMOUN
+montant est :919129 DH ========================
+
+ CIN de client est: ds
+ le Nom de client :dsdq
+Prénom de client :sdsd
+montant est :sds DH ========================
+
+ CIN de client est: SH774
+ le Nom de client :MERY
+Prénom de client :ELHAJ
+montant est :0.000000 DH ========================
+
+ CIN de client est: JDJD3
+ le Nom de client :DDD
+Prénom de client :SDDF
+montant est :0.000000 DH ========================
+
+ CIN de client est: SH93939
+ le Nom de client :MERYZM
+Prénom de client :YEHD
+montant est :0.000000.2 DH ========================
+
+ CIN de client est: 34
+ le Nom de client :TRRE
+Prénom de client :434
+montant est :33333.000000 DH ========================
+
+ CIN de client est: HDHF
+ le Nom de client :DSKDK
+Prénom de client :SDDS
+montant est :599.000000 DH ========================
+
+ CIN de client est: SH0980808
+ le Nom de client :OUMA
+Prénom de client :ABOU
+montant est :9833.000000 DH
+ ========================
+
+ CIN de client est: SH12
+ le Nom de client :EEE
+Prénom de client :SEDDS
+montant est :322.000000 DH
+ ========================
+
+ CIN de client est: DZ
+ le Nom de client :DZ
+Prénom de client :DD
+montant est :4.000000 DH
+ ========================
+
+ CIN de client est: 11
+ le Nom de client :iu
+Prénom de client :sss
+montant est :323.000000 DH
+ ========================
+
+ CIN de client est: SH1234
+ le Nom de client :OUMAIMA
+Prénom de client :ABOUELHAITAM
+montant est :8.000000 DH
