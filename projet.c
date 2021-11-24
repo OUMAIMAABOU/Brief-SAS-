@@ -11,33 +11,31 @@ char prenom[100];
 float montant;
 };
 
-struct Gestion_Bancaire compt1;
 
+
+  struct Gestion_Bancaire compt1;
+  
+float r[10];
 
 void ajouter(){
 FILE* cp;
 cp =fopen("Gestion_Bancaire.txt","a");
-
 printf("entrez CIN :");
 scanf("%s",compt1.CIN);
-fprintf(cp,"%s;",compt1.CIN);
-fflush(stdin);
 
 printf("entrez nom :");
 scanf("%s",compt1.nom);
-fprintf(cp,"%s;",compt1.nom);
-fflush(stdin);
+
 
 printf("entrez prenom :");
 scanf("%s",compt1.prenom);
-fprintf(cp,"%s;",compt1.prenom);
-fflush(stdin);
+
 
 printf("entrez montant :");
 scanf("%f",&compt1.montant);
-fprintf(cp,"%f\n",compt1.montant);
-fflush(stdin);
 
+fprintf(cp, "%f;%s;%s;%s\n",compt1.montant,compt1.CIN, compt1.nom, compt1.prenom);
+printf("bien ajouter:");
 
 fclose(cp);
 
@@ -45,39 +43,51 @@ fclose(cp);
 
 }
 
-
 void afficher(){
-  FILE *cp = fopen("Gestion_Bancaire.txt","r");
- while(fread(&compt1, sizeof(struct Gestion_Bancaire), 1, cp))
-        printf (" %s %s %s %f\n", compt1.CIN,
-       compt1.nom, compt1.prenom,compt1.montant);
+  FILE *cp;
+  cp = fopen("Gestion_Bancaire.txt","r");
+  char bef[100][100];
+  int i = 0;
+ while(fgets(bef[i], 100, cp)){
+   printf("%s", bef[i]);
+   i++;
+ }
 fclose(cp);
 
 }
 
-/*void montant(float solde){
-float t[100];
-int i ;
-for(i=0;i<100;i++){
-  t[i]=solde;
-}
-}*/
+void montant(){
 
-void affichermontant(){
+
+FILE *cp;
+cp = fopen("Gestion_Bancaire.txt","r");
+
+
+   do {
+     fscanf (cp,"%f",compt1.montant));
+
+    
+              printf("%f",compt1.montant);
+              }while(!feof(cp));
+
+
+fclose(cp);
+
+}
+
+
+
+
+/*void affichermontant(){
 
 
   FILE *cp;
   cp = fopen("Gestion_Bancaire.txt","r");
   
 
-while(fread(&compt1, sizeof(struct Gestion_Bancaire), 1, cp))
-    
-printf("%f",compt1.montant); 
-    
-        
-fclose(cp);
-
-}
+while(fread(&compt1, sizeof(struct Gestion_Bancaire), 1, cp)) 
+  printf("%f",compt1.montant);       
+ fclose(cp);}*/
     
 
 /*void rechercher(){
@@ -107,31 +117,31 @@ fclose(cp);
   fclose(cp);
 
 }*/
-void re(){
-  char cin[20];
-
+void Recherche(){
+   char cin[40];
    FILE * cp;
-
-   cp = fopen ("Gestion_Bancaire.txt", "w+");
- rewind(cp);
-    printf("donnez CIN de recherche :");
-  scanf("%s",cin);
-  do{
-       fscanf(cp, " %s %s %s %f", compt1.CIN,compt1.nom, compt1.prenom,compt1.montant);
- 
+   cp= fopen ("Gestion_Bancaire.txt", "r");
+   printf("donnez CIN a rechercher :");
+   scanf("%s",cin);
+    while (fread (&compt1, sizeof(compt1), 4, cp)){
    if (strcmp(compt1.CIN,cin) == 0){
-   
-
-   
+   rewind(cp);
    printf("CIN DE CLIENT :%s\n", compt1.CIN );
+   
    printf("nom de client : %s\n", compt1.nom );
    printf("Prenom : %s\n", compt1.prenom );
    printf("Solde : %f dh\n",compt1.montant );
-   }
+   } else{
+        printf("il n'existe pas");
+    }while(!feof(cp));
+   
+   fclose(cp);
+ 
+
   
-   }while(!feof(cp));
- fclose(cp);
+   }
 }
+
 
 
  
@@ -150,7 +160,7 @@ remove("compte.txt");
 rename("compte.txt","Gestion_Bancaire.txt");
 printf("bien suppr");
 }*/
-  void amo(){
+  /*void afficmo(){
     FILE *cp ;
 cp=fopen("Gestion_Bancaire.txt","r");
 do{
@@ -159,11 +169,11 @@ printf("%f",compt1.montant);
 
 }while(!feof(cp));
    fclose(cp);
-  }
+  }*/
 
 
   void operation(){
-        float monatant
+        float montant;
 
 printf("entrez solde");
 scanf("%f",&montant);
@@ -172,35 +182,28 @@ FILE *cp;
 cp=fopen("Gestion_Bancaire.txt","r");
 do{
 
-fscanf(cp," %s ",&compt1.CIN);
-fscanf(cp," %s ",&compt1.nom);
-fscanf(cp," %s ",&compt1.prenom);
+fscanf(cp," %s ",compt1.CIN);
+fscanf(cp," %s ",compt1.nom);
+fscanf(cp," %s ",compt1.prenom);
 fscanf(cp," %f ",&compt1.montant);
-print()
-printf("pour clacluer le retrait clique qur R et D pour Dépôt ");
-scanf("%c",choix);
+
+printf("pour clacluer le retrait clique qur R et D pour Depot ");
+scanf( "%s" ,&choix);
 if(choix=='R'){
-printf(" le retrait est:%f Dh\n.",compt1.montant - solde );
+printf(" le retrait est:%f Dh\n.",compt1.montant - montant );
 }else if (choix=='R'){
-  printf("Dépôt est:%f Dh\n.",compt1.montant + solde );
+  printf("Dépôt est:%f Dh\n.",compt1.montant + montant );
 
 }else {
  printf("choix incorrect" );
  
 }
 fflush(stdin);
-
-
-
 } while(!feof(cp));
-fclose(cp);
-
+fclose(cp); 
 }
- 
-
 int main()
 {
-   
 int ops ;
 char qus;
 
@@ -212,9 +215,11 @@ printf("\n 1.pour ajouter");
 printf("\n 2.pour afficher");
 printf("\n 3.pour Operation");
 printf("\n 4.pour supprime");
-printf("\n 5.Quitter");
+printf("\n 5.SUPRIMER TOUT FICHES");
+printf("\n 6.QUITTER");
 do{
-printf("\n entre votre choix :");
+printf("\n entre votre choix :")
+;
 scanf("%d",&ops);
 
 switch(ops){
@@ -229,19 +234,19 @@ case 3:
 operation();
 break;
 case 4:
-amo();
-
-
-
+montant();
 break;
+
 case 5:
+Recherche();
 
 break;
-   default:
-   printf("\n le choix n'existe pas");
+case 6:
+break;
+ 
 
 }
-}while(ops<1 || ops>5);
+}while(ops<1 || ops>6);
 
 printf("\n continuez O/N?");
 scanf("%s",&qus);
@@ -251,4 +256,5 @@ fflush(stdin);
 
 
     return 0;
+
 }
