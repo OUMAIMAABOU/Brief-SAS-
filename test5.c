@@ -77,9 +77,72 @@ void RechercherCompte(){
     
     }
   }
- 
- 
 
+ 
+ 
+void Ascendant(){ 
+  int N=p;
+  float max;
+   int Posmax;
+  while(N>0)
+							        {  max=compt[0].montant;
+							           Posmax=0;
+									for(i=0;i<N;i++)
+												{
+										        	if(compt[i].montant>max)
+										        	{
+										        		max=compt[i].montant;
+										        		Posmax=i;
+													}
+										        	
+												}
+												
+												
+										        for(i=Posmax;i<N;i++)	
+										        {
+										        	compt[i].montant=compt[i+1].montant;
+												}
+												
+												compt[N-1].montant=max;
+												N--;
+									}
+                  for(i=0;i<p;i++)
+                  {
+                    printf("%f \n",compt[i].montant);
+                  }
+}
+
+void Descendant() { 
+  int N=p;
+  float max;
+   int Posmax;
+  while(N>0)
+							        {  max=compt[0].montant;
+							           Posmax=0;
+									for(i=0;i<N;i++)
+												{
+										        	if(compt[i].montant>max)
+										        	{
+										        		max=compt[i].montant;
+										        		Posmax=i;
+													}
+										        	
+												}
+												
+												
+										        for(i=Posmax;i<N;i++)	
+										        {
+										        	compt[i].montant=compt[i+1].montant;
+												}
+												
+												compt[N-1].montant=max;
+												N--;
+									}
+                  for(i=p-1;i>=0;i--)
+                  {
+                    printf("%f \n",compt[i].montant);
+                  }
+}
 
 
   void operation(){
@@ -93,10 +156,7 @@ for(i=0; i<p; i++){
     if(strcmp(compt[i].CIN,cin)==0){
 printf("entrez solde:");
 scanf("%f",&montant);
-if(montant<0){
-  montant=montant*(-1);
 
-}
 
 printf("pour clacluer le retrait clique qur R et D pour Depot ");
 scanf( "%s" ,&choix);
@@ -108,17 +168,12 @@ printf(" le retrait est:%f Dh\n.",compt[i].montant - montant );
 
 }
 
-
-
-else {
- printf("choix incorrect" );
- break;
- 
-}
-
     }
 
+
+
 }
+    
   }
 
 
@@ -129,13 +184,15 @@ void afficher(){
   char bef[100][100];
   i = 0;
  while(fgets(bef[i], 100, cp)){
-   printf("%s", bef[i]);
+   printf("%s",bef[i]);
    i++;
+ 
  }
 fclose(cp);
 
 }
-main()
+
+int main()
 {
 int ops ;
 char qus;
@@ -149,7 +206,9 @@ printf("\n 2.pour afficher Fichies");
 printf("\n 3.pour Operation");
 printf("\n 4.pour afficher");
 printf("\n 5.Rechercher");
-printf("\n 6.QUITTER");
+printf("\n 6.Ascendant");
+printf("\n 7.Descendant");
+printf("\n 8.QUITTER");
 do{
 printf("\n entre votre choix :")
 ;
@@ -162,8 +221,8 @@ Ajouter();
 break;
 case 2:
 afficher();
-
 break;
+
 case 3:
 operation();
 break;
@@ -174,17 +233,21 @@ break;
 
 case 5:
 RechercherCompte();
-
-
-
 break;
 case 6:
+Ascendant();
+break;
+case 7:
+ Descendant();
+break;
+case 8:
+
 break;
 
- 
+
 
 }
-}while(ops<1 || ops>6);
+}while(ops<1 || ops>8);
 
 printf("\n continuez O/N?");
 scanf("%s",&qus);
