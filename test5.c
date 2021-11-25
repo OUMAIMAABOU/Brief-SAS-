@@ -83,22 +83,22 @@ void RechercherCompte(){
 void Ascendant(){ 
   int N=p;
   float max;
-   int Posmax;
+   int pmax=0;
   while(N>0)
 							        {  max=compt[0].montant;
-							           Posmax=0;
+							         
 									for(i=0;i<N;i++)
 												{
 										        	if(compt[i].montant>max)
 										        	{
 										        		max=compt[i].montant;
-										        		Posmax=i;
+										        		pmax=i;
 													}
 										        	
 												}
 												
 												
-										        for(i=Posmax;i<N;i++)	
+										        for(i=pmax;i<N;i++)	
 										        {
 										        	compt[i].montant=compt[i+1].montant;
 												}
@@ -115,22 +115,22 @@ void Ascendant(){
 void Descendant() { 
   int N=p;
   float max;
-   int Posmax;
+   int pmax=0;
   while(N>0)
 							        {  max=compt[0].montant;
-							           Posmax=0;
+							    
 									for(i=0;i<N;i++)
 												{
 										        	if(compt[i].montant>max)
 										        	{
 										        		max=compt[i].montant;
-										        		Posmax=i;
+										        		pmax=i;
 													}
 										        	
 												}
 												
 												
-										        for(i=Posmax;i<N;i++)	
+										        for(i=pmax;i<N;i++)	
 										        {
 										        	compt[i].montant=compt[i+1].montant;
 												}
