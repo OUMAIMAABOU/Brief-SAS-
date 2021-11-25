@@ -1,0 +1,206 @@
+
+==================
+CIN               :SH10
+LE NOM EST       :OUMA
+PRENOM DE CLIENT :DF
+SOLDE DE CLIENT  :343.000000
+==================
+CIN               :SH
+LE NOM EST       :SDSJD
+PRENOM DE CLIENT :DSD
+SOLDE DE CLIENT  :32323.000000
+==================
+CIN               :SH
+LE NOM EST       :SD
+PRENOM DE CLIENT :DD
+SOLDE DE CLIENT  :0.000000
+==================
+CIN               :SD
+LE NOM EST       :SD
+PRENOM DE CLIENT :DSD
+SOLDE DE CLIENT  :222.000000
+==================
+CIN               :SD
+LE NOM EST       :Z
+PRENOM DE CLIENT :SS
+SOLDE DE CLIENT  :333.000000
+==================
+CIN               :FDTT
+LE NOM EST       :TRT
+PRENOM DE CLIENT :TF
+SOLDE DE CLIENT  :4.000000
+==================
+CIN               :GGF
+LE NOM EST       :GFG
+PRENOM DE CLIENT :GDG
+SOLDE DE CLIENT  :444.000000
+==================
+CIN               :SDSD
+LE NOM EST       :SDSD
+PRENOM DE CLIENT :DSD
+SOLDE DE CLIENT  :2323.000000
+==================
+CIN               :SDSD
+LE NOM EST       :SDSD
+PRENOM DE CLIENT :DSD
+SOLDE DE CLIENT  :2323.000000
+==================
+CIN               :SDSD
+LE NOM EST       :SDSD
+PRENOM DE CLIENT :DSD
+SOLDE DE CLIENT  :2323.000000
+==================
+CIN               :SQS
+LE NOM EST       :QQ
+PRENOM DE CLIENT :SQS
+SOLDE DE CLIENT  :32.000000
+==================
+CIN               :SQS
+LE NOM EST       :QQ
+PRENOM DE CLIENT :SQS
+SOLDE DE CLIENT  :32.000000
+==================
+CIN               :SQS
+LE NOM EST       :QQ
+PRENOM DE CLIENT :SQS
+SOLDE DE CLIENT  :32.000000
+==================
+CIN               :S1
+LE NOM EST       :DSD
+PRENOM DE CLIENT :DSD
+SOLDE DE CLIENT  :22.000000
+==================
+CIN               :S1
+LE NOM EST       :DSD
+PRENOM DE CLIENT :DSD
+SOLDE DE CLIENT  :22.000000
+==================
+CIN               :S1
+LE NOM EST       :DSD
+PRENOM DE CLIENT :DSD
+SOLDE DE CLIENT  :22.000000
+==================
+CIN               :E1
+LE NOM EST       :SQSS
+PRENOM DE CLIENT :SQS
+SOLDE DE CLIENT  :30.000000
+==================
+CIN               :E1
+LE NOM EST       :DE
+PRENOM DE CLIENT :EEE
+SOLDE DE CLIENT  :30.000000
+==================
+CIN               :E1
+LE NOM EST       :DE
+PRENOM DE CLIENT :EEE
+SOLDE DE CLIENT  :30.000000
+==================
+CIN               :44R
+LE NOM EST       :ZEE
+PRENOM DE CLIENT :ZE
+SOLDE DE CLIENT  :15.000000
+==================
+CIN               :SZ
+LE NOM EST       :DEE
+PRENOM DE CLIENT :EEE
+SOLDE DE CLIENT  :13.000000
+==================
+CIN               :SZ
+LE NOM EST       :DEE
+PRENOM DE CLIENT :EEE
+SOLDE DE CLIENT  :13.000000
+==================
+CIN               :E5564
+LE NOM EST       :SS
+PRENOM DE CLIENT :DD
+SOLDE DE CLIENT  :15.000000
+==================
+CIN               :E5564
+LE NOM EST       :sqs
+PRENOM DE CLIENT :ddd
+SOLDE DE CLIENT  :0.000000
+==================
+CIN               :E55
+LE NOM EST       :dd
+PRENOM DE CLIENT :zza
+SOLDE DE CLIENT  :0.000000
+==================
+CIN               :E55
+LE NOM EST       :DDD
+PRENOM DE CLIENT :DDD
+SOLDE DE CLIENT  :12.000000
+==================
+CIN               :1
+LE NOM EST       :SF
+PRENOM DE CLIENT :HJJ
+SOLDE DE CLIENT  :15.000000
+==================
+CIN               :4
+LE NOM EST       :33
+PRENOM DE CLIENT :ZD
+SOLDE DE CLIENT  :15.000000
+==================
+CIN               :OUMA1
+LE NOM EST       :SD
+PRENOM DE CLIENT :SD
+SOLDE DE CLIENT  :33.000000
+==================
+CIN               :OUMA1
+LE NOM EST       :SD
+PRENOM DE CLIENT :SD
+SOLDE DE CLIENT  :33.000000
+==================
+CIN               :DS
+LE NOM EST       :DSD
+PRENOM DE CLIENT :DD
+SOLDE DE CLIENT  :22.000000
+==================
+CIN               :DS
+LE NOM EST       :DSD
+PRENOM DE CLIENT :DD
+SOLDE DE CLIENT  :22.000000
+==================
+CIN               :S
+LE NOM EST       :SD
+PRENOM DE CLIENT :DDD
+SOLDE DE CLIENT  :33232.000000
+==================
+CIN               :S
+LE NOM EST       :SD
+PRENOM DE CLIENT :DDD
+SOLDE DE CLIENT  :33232.000000
+==================
+CIN               :SQ
+LE NOM EST       :ZSS
+PRENOM DE CLIENT :DDD
+SOLDE DE CLIENT  :111.000000
+==================
+CIN               :SQ
+LE NOM EST       :ZSS
+PRENOM DE CLIENT :DDD
+SOLDE DE CLIENT  :111.000000
+==================
+CIN               :SQ
+LE NOM EST       :ZSS
+PRENOM DE CLIENT :DDD
+SOLDE DE CLIENT  :111.000000
+==================
+CIN               :SH193097
+LE NOM EST       :OUMAIMA
+PRENOM DE CLIENT :ABOUELHAITAM
+SOLDE DE CLIENT  :13340.000000
+==================
+CIN               :SH192029
+LE NOM EST       :DONIA
+PRENOM DE CLIENT :BAHASAN
+SOLDE DE CLIENT  :12122.000000
+==================
+CIN               :SH192029
+LE NOM EST       :DONIA
+PRENOM DE CLIENT :BAHASAN
+SOLDE DE CLIENT  :12122.000000
+==================
+CIN               :PM
+LE NOM EST       :DD
+PRENOM DE CLIENT :DD
+SOLDE DE CLIENT  :22.000000
