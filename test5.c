@@ -26,7 +26,7 @@ fprintf(cp,"\nPRENOM DE CLIENT :%s",compt[i].prenom);
  fflush(cp);
 fprintf(cp,"\nSOLDE DE CLIENT  :%f",compt[i].montant);
  fflush(cp);
- 
+ fclose(cp);
 }
 
 void Ajouter()
@@ -52,10 +52,10 @@ void Affichertan()
 
  for(i=0;i<p;i++)
  {
- printf("CIN :%s",compt[i].CIN);
- printf("\nNom client : %s",compt[i].nom);
- printf("\n Prenom client :\t %s ",compt[i].prenom); 
- printf("\nSolde :%f  ",compt[i].montant);  
+ printf("CIN              :%s",compt[i].CIN);
+ printf("\nNom client     :\t %s",compt[i].nom);
+ printf("\n Prenom client :%s ",compt[i].prenom); 
+ printf("\nSolde          :%f  ",compt[i].montant);  
 
  }
  
@@ -74,7 +74,7 @@ void RechercherCompte(){
         printf("\n SOLDE            :%f",compt[i].montant);
 
     }
-    
+    printf("n'existe pas ");
     }
   }
 
@@ -85,31 +85,32 @@ void Ascendant(){
   float max;
    int pmax=0;
   while(N>0)
-							        {  max=compt[0].montant;
+   { 
+      max=compt[0].montant;
 							         
-									for(i=0;i<N;i++)
-												{
-										        	if(compt[i].montant>max)
-										        	{
-										        		max=compt[i].montant;
-										        		pmax=i;
-													}
+		for(i=0;i<N;i++)
+	{
+if(compt[i].montant>max)
+{
+max=compt[i].montant;
+pmax=i;
+}
 										        	
-												}
+}
+
 												
+for(i=pmax;i<N;i++)	
+{
+compt[i].montant=compt[i+1].montant;
+}
 												
-										        for(i=pmax;i<N;i++)	
-										        {
-										        	compt[i].montant=compt[i+1].montant;
-												}
-												
-												compt[N-1].montant=max;
-												N--;
-									}
-                  for(i=0;i<p;i++)
-                  {
-                    printf("%f \n",compt[i].montant);
-                  }
+compt[N-1].montant=max;
+N--;
+}
+for(i=0;i<p;i++)
+{
+printf("%f \n",compt[i].montant);
+}
 }
 
 void Descendant() { 
@@ -117,31 +118,31 @@ void Descendant() {
   float max;
    int pmax=0;
   while(N>0)
-							        {  max=compt[0].montant;
+{  max=compt[0].montant;
 							    
-									for(i=0;i<N;i++)
-												{
-										        	if(compt[i].montant>max)
-										        	{
-										        		max=compt[i].montant;
-										        		pmax=i;
-													}
+for(i=0;i<N;i++)
+{
+if(compt[i].montant>max)
+{
+max=compt[i].montant;
+pmax=i;
+}
 										        	
-												}
+}
 												
 												
-										        for(i=pmax;i<N;i++)	
-										        {
-										        	compt[i].montant=compt[i+1].montant;
-												}
+for(i=pmax;i<N;i++)	
+{
+compt[i].montant=compt[i+1].montant;
+}
 												
-												compt[N-1].montant=max;
-												N--;
-									}
-                  for(i=p-1;i>=0;i--)
-                  {
-                    printf("%f \n",compt[i].montant);
-                  }
+compt[N-1].montant=max;
+N--;
+}
+for(i=p-1;i>=0;i--)
+{
+printf("%f \n",compt[i].montant);
+}
 }
 
 
@@ -162,10 +163,11 @@ printf("pour clacluer le retrait clique qur R et D pour Depot ");
 scanf( "%s" ,&choix);
 if(choix=='R'|| choix=='r' ){
 printf(" le retrait est:%f Dh\n.",compt[i].montant - montant );
+break;
 }
  if (choix=='D'|| choix=='d'){
   printf(" Depot est:%f Dh\n.",compt[i].montant + montant );
-
+break;
 }
 
     }
